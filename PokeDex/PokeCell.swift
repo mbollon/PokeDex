@@ -21,4 +21,5 @@ class PokeCell: UICollectionViewCell {
     }
     
     
+    
 }

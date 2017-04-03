@@ -53,34 +53,40 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="9I5-Qg-a4L" customClass="PokeCell" customModule="PokeDex" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="108" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-kf-voB">
-                                                    <rect key="frame" x="0.0" y="88" width="108" height="20"/>
+                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-kf-voB">
+                                                    <rect key="frame" x="0.0" y="88" width="105" height="17"/>
                                                     <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="zhx-Cq-WNm"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="fww-bf-5JW">
-                                                    <rect key="frame" x="22" y="10" width="65" height="70"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="fww-bf-5JW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="91"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="91" id="6a1-Wx-2rU"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="fww-bf-5JW" firstAttribute="leading" secondItem="9I5-Qg-a4L" secondAttribute="leadingMargin" constant="14" id="2zo-aN-o7k"/>
-                                            <constraint firstItem="dsa-kf-voB" firstAttribute="top" secondItem="fww-bf-5JW" secondAttribute="bottom" constant="8" id="97m-FM-1Zp"/>
-                                            <constraint firstItem="fww-bf-5JW" firstAttribute="top" secondItem="9I5-Qg-a4L" secondAttribute="topMargin" constant="2" id="Ii4-OZ-dGT"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="fww-bf-5JW" secondAttribute="trailing" constant="13" id="Ijh-Vg-NDd"/>
-                                            <constraint firstAttribute="bottom" secondItem="dsa-kf-voB" secondAttribute="bottom" id="MJP-Ny-41T"/>
-                                            <constraint firstItem="dsa-kf-voB" firstAttribute="leading" secondItem="9I5-Qg-a4L" secondAttribute="leading" id="iHW-qy-stq"/>
-                                            <constraint firstAttribute="trailing" secondItem="dsa-kf-voB" secondAttribute="trailing" id="jkU-Me-ctM"/>
+                                            <constraint firstItem="fww-bf-5JW" firstAttribute="leading" secondItem="9I5-Qg-a4L" secondAttribute="leading" id="1hi-8B-aMd"/>
+                                            <constraint firstAttribute="trailing" secondItem="fww-bf-5JW" secondAttribute="trailing" id="Hdl-a9-SCM"/>
+                                            <constraint firstAttribute="bottom" secondItem="dsa-kf-voB" secondAttribute="bottom" id="KIf-Ce-FHu"/>
+                                            <constraint firstItem="dsa-kf-voB" firstAttribute="leading" secondItem="9I5-Qg-a4L" secondAttribute="leading" id="dOu-5T-TDW"/>
+                                            <constraint firstAttribute="trailing" secondItem="dsa-kf-voB" secondAttribute="trailing" id="jqg-Oa-frz"/>
+                                            <constraint firstItem="fww-bf-5JW" firstAttribute="top" secondItem="9I5-Qg-a4L" secondAttribute="top" id="mds-gM-2BO"/>
                                         </constraints>
+                                        <size key="customSize" width="105" height="105"/>
                                         <connections>
                                             <outlet property="nameLbl" destination="dsa-kf-voB" id="ws2-VC-FU6"/>
                                             <outlet property="thumbImage" destination="fww-bf-5JW" id="OiT-jd-G4O"/>
